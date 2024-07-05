@@ -29,3 +29,6 @@ If you don't want the whole page to slowly fade away but just a small part, then
     <h1>This will disappear</h1>
 </NotPaid>
 ```
+
+## Demo
+You can see a live demo [here](https://sebaofficial.github.io/not-paid-svelte/).
