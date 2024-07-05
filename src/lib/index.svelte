@@ -2,6 +2,7 @@
 	import { onMount } from 'svelte';
 
 	export let global = true;
+	export let opacity = 1;
 
 	export let due_date: Date;
 	export let days_deadline: number;
@@ -11,7 +12,6 @@
 	let utc2 = Date.UTC(current_date.getFullYear(), current_date.getMonth(), current_date.getDate());
 	let days = Math.floor((utc2 - utc1) / (1000 * 60 * 60 * 24));
 
-	let opacity = 1;
 
 	if (days > 0) {
 		let days_late = days_deadline - days;
@@ -28,7 +28,5 @@
 </script>
 
 {#if !global}
-	<div style="opacity: var(----not-paid-opacity);">
-		<slot />
-	</div>
+	<slot style="opacity: {opacity}" />
 {/if}
