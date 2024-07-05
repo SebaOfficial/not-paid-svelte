@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="./favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		
+		<link rel="modulepreload" href="./_app/immutable/entry/start.C2oHRk6G.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/entry.DO8ISzjN.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/scheduler.BvLojk_z.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/app.CoZsA0_f.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index.DkdUiI5L.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/0.DpbBg6xc.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/2.Cu16weNa.js">
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div>   <h1 data-svelte-h="svelte-ojh4tb">Demo</h1> <form><label for="due-date" data-svelte-h="svelte-1ygysfw">Select the Due Date:</label> <input type="date" id="due-date" required> <br> <label for="days-deadline" data-svelte-h="svelte-1kkvyc1">Select How many days till the website is vanished:</label> <input type="number" id="days-deadline" required> <br> <button type="submit" data-svelte-h="svelte-lzph4r">Create NotPaid Element</button></form> 
+			
+			<script>
+				{
+					__sveltekit_1yhnepf = {
+						base: new URL(".", location).pathname.slice(0, -1)
+					};
+
+					const element = document.currentScript.parentElement;
+
+					const data = [null,null];
+
+					Promise.all([
+						import("./_app/immutable/entry/start.C2oHRk6G.js"),
+						import("./_app/immutable/entry/app.CoZsA0_f.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 2],
+							data,
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+	</body>
+</html>
