@@ -14,7 +14,7 @@ Then you can import the component with
 ```svelte
 <script>
     import NotPaid from 'not-paid-svelte';
-<script>
+</script>
 ```
 
 And use it like this:
