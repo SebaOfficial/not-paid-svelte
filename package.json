@@ -1,8 +1,11 @@
 {
 	"name": "not-paid-svelte",
-	"version": "0.0.1",
+	"version": "1.0.0",
 	"license": "MIT",
-	"repository": "git@github.com:SebaOfficial/not-paid-svelte.git",
+	"repository": {
+		"type": "git",
+		"url": "git+ssh://git@github.com/SebaOfficial/not-paid-svelte.git"
+	},
 	"keywords": [
 		"svelte",
 		"sveltekit",
