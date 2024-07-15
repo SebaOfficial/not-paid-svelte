@@ -12,7 +12,6 @@
 	let utc2 = Date.UTC(current_date.getFullYear(), current_date.getMonth(), current_date.getDate());
 	let days = Math.floor((utc2 - utc1) / (1000 * 60 * 60 * 24));
 
-
 	if (days > 0) {
 		let days_late = days_deadline - days;
 		opacity = (days_late * 100) / days_deadline / 100;
@@ -28,5 +27,11 @@
 </script>
 
 {#if !global}
-	<slot style="opacity: {opacity}" />
+	<div style="opacity: {opacity}">
+		<slot />
+	</div>
+
+	<div style="opacity: {1 - opacity};">
+		<slot name="alt" />
+	</div>
 {/if}
