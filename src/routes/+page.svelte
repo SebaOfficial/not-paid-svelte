@@ -29,3 +29,7 @@
 	
 	<button type="submit" on:click={createNotPaidElement}>Create NotPaid Element</button>
 </form>
+
+<br>
+
+<a href="local-demo?due_date={due_date}&days_deadline={days_deadline}">See the Local demo</a>
