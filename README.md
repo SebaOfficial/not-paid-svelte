@@ -27,6 +27,7 @@ If you don't want the whole page to slowly fade away but just a small part, then
 ```svelte
 <NotPaid days_deadline={60} due_date={new Date('2024-06-5')} global={false}>
     <h1>This will disappear</h1>
+    <h1 slot="alt">This will appear</h1>
 </NotPaid>
 ```
 
